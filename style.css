@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f4f6f9;
+}
+
+.main {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.card {
+    background: #3498db;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* INPUTS */
+input {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* BUTTON */
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    background: #00a8ff;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+tr:hover {
+    background: rgba(0,0,0,0.05);
+}
+
+/* DARK MODE */
+body.dark {
+    background: #1e272e;
+    color: white;
+}
+
+body.dark .card {
+    background: #353b48;
+}
+
+body.dark input {
+    background: #2f3640;
+    color: white;
+    border: 1px solid #555;
+}
+
+body.dark table {
+    background: #2f3640;
+}
+
+body.dark th, 
+body.dark td {
+    border: 1px solid #555;
+}
+
+body.dark button {
+    background: #00a8ff;
+}
