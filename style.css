@@ -1,0 +1,79 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #2c3e50, #4ca1af);
+}
+
+.container {
+  background: white;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+input {
+  padding: 10px;
+  margin: 5px;
+}
+
+button {
+  padding: 8px 15px;
+  background: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background: #3498db;
+  color: white;
+}
+
+td, th {
+  padding: 10px;
+  text-align: center;
+}
+
+/* 🌙 DARK MODE */
+.dark {
+  background: #121212;
+  color: white;
+}
+
+.dark .container {
+  background: #1e1e1e;
+  color: white;
+}
+
+.dark input {
+  background: #333;
+  color: white;
+  border: 1px solid #555;
+}
+
+.dark table {
+  background: #1e1e1e;
+  color: white;
+}
+
+.dark th {
+  background: #333;
+}
+
+.dark td {
+  color: white;
+}
+
+.dark button {
+  background: #444;
+}
