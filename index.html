@@ -1,44 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Employee Dashboard</title>
+    <title>Employee Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-<div class="main">
 
-    <h1>Employee Dashboard</h1>
+<div class="container">
+    <h2>Employee Login</h2>
 
-    <!-- DARK MODE -->
-    <button id="darkBtn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+    <input type="text" id="username" placeholder="Username"><br><br>
+    <input type="password" id="password" placeholder="Password"><br><br>
 
-    <!-- CARDS -->
-    <div class="cards">
-        <div class="card">Total Employees: <span id="count">0</span></div>
-        <div class="card">Total Salary: ₹<span id="totalSalary">0</span></div>
-    </div>
-
-    <!-- INPUTS -->
-    <input type="text" id="name" placeholder="Name">
-    <input type="number" id="salary" placeholder="Salary">
-    <button onclick="saveEmployee()">Save</button>
-
-    <!-- SEARCH -->
-    <input type="text" id="search" placeholder="Search Name" onkeyup="searchEmployee()">
-
-    <!-- TABLE -->
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Salary</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody id="tableBody"></tbody>
-    </table>
-
+    <button onclick="login()">Login</button>
 </div>
 
 <script src="script.js"></script>
