@@ -1,54 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Dashboard</title>
+    <title>Employee Dashboard</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-
 <body>
 
 <div class="container">
 
-<h1>Employee Dashboard</h1>
+    <h1>Employee Dashboard</h1>
 
-<div class="cards">
-    <div>Total Employees: <span id="count">0</span></div>
-    <div>Total Salary: ₹<span id="totalSalary">0</span></div>
-</div>
+    <div class="cards">
+        <div>Total Employees: <span id="count">0</span></div>
+        <div>Total Salary: ₹<span id="totalSalary">0</span></div>
+    </div>
 
-<!-- INPUTS -->
-<input type="text" id="empId" placeholder="Employee ID">
-<input type="text" id="name" placeholder="Employee Name">
-<input type="text" id="deptId" placeholder="Department ID">
-<input type="number" id="salary" placeholder="Salary">
-<input type="date" id="hireDate">
+    <br>
 
-<button onclick="saveEmployee()">Add</button>
+    <input type="text" id="name" placeholder="Name">
+    <input type="number" id="salary" placeholder="Salary">
+    <button onclick="saveEmployee()">Save</button>
 
-<input type="text" id="search" placeholder="Search Name" onkeyup="display()">
+    <br><br>
 
-<!-- TABLE -->
-<table>
-<thead>
-<tr>
-<th>ID</th>
-<th>Name</th>
-<th>Dept ID</th>
-<th>Salary</th>
-<th>Hire Date</th>
-<th>Action</th>
-</tr>
-</thead>
+    <input type="text" id="search" placeholder="Search Name" onkeyup="display()">
 
-<tbody id="tableBody"></tbody>
-</table>
+    <br><br>
 
-<canvas id="chart" height="100"></canvas>
+    <table border="1" width="100%">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Salary</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
 
 </div>
 
 <script src="script.js"></script>
-
 </body>
 </html>
