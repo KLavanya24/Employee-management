@@ -1,55 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Employee Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+  <title>Employee Dashboard</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
 
-    <h1>Employee Dashboard</h1>
+<h1>Employee Dashboard</h1>
 
-    <div class="cards">
-        <div>Total Employees: <span id="count">0</span></div>
-        <div>Total Salary: ₹<span id="totalSalary">0</span></div>
-    </div>
+<button onclick="toggleDarkMode()">🌙 Dark Mode</button>
 
-    <br>
+<div class="cards">
+  <div>Total Employees: <span id="count">0</span></div>
+  <div>Total Salary: ₹<span id="totalSalary">0</span></div>
+</div>
 
-    <input type="text" id="empId" placeholder="Employee ID">
-    <input type="text" id="name" placeholder="Name">
-    <input type="text" id="deptId" placeholder="Department ID">
-    <input type="number" id="salary" placeholder="Salary">
-    <input type="date" id="hireDate">
-    <button onclick="saveEmployee()">Save</button>
+<br>
 
-    <br><br>
+<input type="number" id="empId" placeholder="Employee ID">
+<input type="text" id="name" placeholder="Name">
+<input type="text" id="deptId" placeholder="Department ID">
+<input type="number" id="salary" placeholder="Salary">
+<input type="date" id="hireDate">
 
-    <input type="text" id="search" placeholder="Search Name" onkeyup="display()">
+<button onclick="saveEmployee()">Save</button>
 
-    <br><br>
+<br><br>
 
-    <table border="1">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Dept</th>
-                <th>Salary</th>
-                <th>Hire Date</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody id="tableBody"></tbody>
-    </table>
+<input type="text" id="search" placeholder="Search Name" onkeyup="display()">
 
-    <br>
+<br><br>
 
-    <canvas id="chart"></canvas>
+<table border="1" width="100%">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Dept</th>
+      <th>Salary</th>
+      <th>Hire Date</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody id="tableBody"></tbody>
+</table>
+
+<br>
+
+<canvas id="chart"></canvas>
 
 </div>
 
+<!-- IMPORTANT -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="script.js"></script>
 
