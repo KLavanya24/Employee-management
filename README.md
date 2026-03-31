@@ -32,7 +32,7 @@ Password: 1234
 ---
 
 ## 🌐 Live Project Link
-https://klavanya24.github.io/Employee-dashboard/
+https://github.com/KLavanya24/Employee-management.git
 
 ---
 
